@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+}
+
+.container_pag {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+}
+
+hr {
+    width: 80%;
+    margin: 0 10%;
+    height: 1px;
+    border: none;
+    background-color: silver;
+}
+
+.conteudo_lateral {
+    width: 32%;
+    height: 343vh;
+    margin-top: 2%;
+}
+
+.titulo_lateral {
+    width: 80%;
+    height: 9%;
+    margin: 0 10%;
+}
+
+.titulo_lateral img {
+    width: 30%;
+}
+
+.titulo_lateral h1 {
+    /* 46px */
+    font-size: 2.875rem;
+    /* 19px */
+    margin-bottom: 1.1875rem;
+}
+
+.titulo_lateral i {
+    /* 60px */
+    font-size: 3.75rem;
+    /* 8px */
+    margin-bottom: 0.5rem;
+}
+
+.imagens_laterais {
+    width: 80%;
+   min-height: 38,3%;
+    margin: 3vh 10%;
+    margin-top: 5vh;
+}
+
+.link_materia {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.link_materia:hover {
+    border: 4px solid silver;
+}
+
+.mini_box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 39%;
+   background-color: white;
+}
+
+.mini_box_espacamento {
+    margin-top: 3vh;
+}
+
+.mini_box img {
+    width: 100%;
+    height: 23vh;
+}
+
+.conteudo_mini_box {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5%; */
+}
+
+.conteudo_mini_box i {
+    font-size: 25px;
+}
+
+.fa-dice-d6 {
+    /* kimi the ice man */
+    color: lightblue;
+}
+
+.container_icons {
+    width: 80%;
+    height: 87vh;
+    margin: 2vh 10%;
+}
+
+.container_icons hr {
+    width: 100%;
+    margin: 0%;
+}
+
+.icones_mais {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    margin-top: 3vh;
+}
+
+.icones_mais i {
+    font-size: 60px;
+    margin-right: 30px;
+}
+
+.link_mais p {
+    margin-bottom: 3px;
+}
+
+.container_ler_depois{
+    width: 80%;
+    min-height: 35vh;
+    margin: 3vh 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.botao_começar_leitura {
+    border: solid 1px black;
+    display: flex;
+    width: 50%;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.botao_começar_leitura:hover {
+    background-color: grey;
+}
+
+/* ****************************************** */
+/* conteudo princial */
+/* ****************************************** */
+
+
+.container_conteudo_principal {
+    width: 65%;
+    height: 98%;
+    margin-top: 2%;
+}
+
+.card_grande {
+   min-height:120vh;
+    background-color: white;
+    border: solid silver 3px;
+}
+
+.espacamento_principal {
+    margin-bottom: 5%;
+}
+
+.titulo_card_principal {
+    border-bottom: solid silver 3px ;
+    width: 100%;
+    min-height: 24%;
+    padding: 9vh 7vh; 
+}
+
+.titulo_card_principal h1 {
+    color: rgb(148, 148, 148);
+}
+
+.container_imagem_conteudo {
+    min-height: 60%;
+    width: 100%;
+}
+
+.container_imagem_conteudo img {
+    margin: 0% 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+   /* height: 40vh; */
+}
+
+.conteudo_principal {
+    width: 100%;
+    height: 40%;
+}
+
+.texto_principal {
+    margin: 0 5%;
+    min-height: 50%;
+     width: 85%;
+    line-height: 4vh;
+}
+
+.ler_likes {
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.ler_mais{
+    min-width: 15vh;
+    height: 8vh;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+}
+
+.ler_mais:hover {
+background-color: grey;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    min-width:40% ; 
+    height: 8vh;
+    margin-right: 5%;
+}
+
+.likes hr {
+    width: 2px;
+    height: 2vh;
+} 
+
+.likes a {
+    color:silver ;
+}
+
+.likes i {
+    color: silver;
+}
+
+
+@media (max-width:920px) {
+    .container_pag {
+        flex-wrap: wrap;
+    }
+
+    .conteudo_lateral,
+    .container_conteudo_principal
+    {
+        width: 100%;
+    }
+
+    hr{
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .conteudo_lateral {
+        height: 275vh;
+        margin-bottom: 7vh;
+    }
+    
+    .titulo_lateral {
+        justify-content: center;
+        text-align: center;
+        border-top: solid 1px silver;
+        height: 40vh;
+        margin-top: 2vh;
+    }
+    
+    .titulo_lateral i {
+        margin: 3vh 0;
+    }
+
+    .titulo_lateral img {
+        margin-top: 4vh;
+    }
+    
+    .imagens_laterais {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+    width: 90%;
+    margin-left: 5%;
+    border: solid salmon;
+    }
+    
+    .mini_box {
+        min-height: 30%;
+        width: 45%;
+    }
+
+    .mini_box img {
+        width: 100%;
+        /* height: 60%; */
+    }
+
+    .mini_box_espacamento {
+        margin: 0%;
+    }
+
+    .container_icons {
+        height: 91vh;
+        width: 90%;
+        /* border: solid 1px rosybrown; */
+        margin:5%;
+    }
+    
+    .container_ler_depois {
+        width: 90%;
+        margin: 5%;
+    }
+
+
+    /* princiapal */
+
+
+.card_grande {
+    height: 50%;
+}
+
+.container_imagem_conteudo img {
+        height: 30vh;
+    }
+    
+    .ler_likes{
+        font-size: 12px;
+        margin-top: 5%;
+    }
+
+    .zero_espacamento {
+        margin-bottom: 0;
+    }
+}
